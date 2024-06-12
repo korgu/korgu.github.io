@@ -24,6 +24,12 @@ html {
   box-sizing: inherit;
 }
 
+.os-theme-light {
+  --os-handle-bg: rgba(255, 255, 255, 0.3);
+  --os-handle-bg-hover: rgba(255, 255, 255, 0.5);
+  --os-handle-bg-active: rgba(255, 255, 255, 0.7);
+}
+
 a {
   text-decoration: none;
 }
