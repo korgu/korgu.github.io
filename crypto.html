@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="page" lang="en">
+<html class="page" lang="en" data-overlayscrollbars-initialize>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -7,7 +7,7 @@
   <meta name="robots" content="noindex">
   <meta name="description" content="List of the best Tap2Earn projects for earning.">
   <meta property="og:site_name" content="korgu crypto">
-  <meta property="og:url" content="https://korgu.github.io/crypto/">
+  <meta property="og:url" content="https://korgu.github.io/crypto">
   <meta property="og:title" content="korgu crypto">
   <meta property="og:description" content="List of the best Tap2Earn projects for earning.">
   <meta property="og:image" content="https://korgu.github.io/opengraph.png">
@@ -19,11 +19,12 @@
   <meta name="twitter:title" content="korgu crypto">
   <meta name="twitter:description" content="List of the best Tap2Earn projects for earning.">
   <meta name="twitter:image" content="https://korgu.github.io/opengraph.png">
-  <link rel="canonical" href="https://korgu.github.io/crypto/">
+  <link rel="canonical" href="https://korgu.github.io/crypto">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <title>korgu crypto</title>
   <link rel="preload" as="font" href="fonts/JetBrainsMonoExtraBold.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="fonts/JetBrainsMonoRegular.woff2" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/overlayscrollbars.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <!-- Google tag (gtag.js) -->
@@ -35,7 +36,7 @@
 
   gtag('config', 'G-PPM97509LL');
 </script>
-<body class="page__body">
+<body class="page__body" data-overlayscrollbars-initialize>
   <header class="header">
     <p class="header__title">Project links</p>
   </header>
@@ -147,5 +148,20 @@
       </a>
     </div>
   </footer>
+  <script src="js/overlayscrollbars.browser.es5.min.js"></script>
+  <script>
+    var {
+      OverlayScrollbars,
+      ScrollbarsHidingPlugin,
+      SizeObserverPlugin,
+      ClickScrollPlugin
+    } = OverlayScrollbarsGlobal;
+
+    const osInstance = OverlayScrollbars(document.querySelector('.page__body'), {
+      scrollbars: {
+        theme: 'os-theme-light',
+      },
+    });
+  </script>
 </body>
 </html>
